@@ -1,0 +1,2 @@
+// app.use(express.json())
+// app.use(express.urlencoded({ extended: true })); declarando de esta manera, me permite mandar por post y que el postman reciba la info que le mando por body!

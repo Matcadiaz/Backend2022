@@ -1,0 +1,23 @@
+1. Principios de programación Backend
+https://coderhouse.zoom.us/rec/share/tncTCCjEqB3tf62rVzE-usQAMS8lrEbFxWik5jwXs4QevnrCVOSelxdQ1QVI2UzM.RcoxZHjGwdJktAGU
+
+2. Principios básicos de Javascript
+https://coderhouse.zoom.us/rec/share/T-MGJFh0ySGEON2f-4DwLGg-h39xIHuiVDZN_S3ZheDsyaDWq6OBwunMFp5SoHDs.NOy-D1Qnk3sj5aZC
+
+3. Programación sincrónica y asincrónica
+https://coderhouse.zoom.us/rec/share/my24jkM2P8FcWPQAiJZBpkH3TgbstpY6ErWj7QFE724UDZWxicSJCW1e2tAi3qtN.DPpiHtt-nnBks1r5
+
+4. Manejo de Archivos en Javascript
+https://coderhouse.zoom.us/rec/share/tFHz09LRJ3A6DeykFsQvwzq4uzRBeZwrUNDyb9AfHEZejy2x85upCQN9x43VhtZG.sjI2soMFZnkqF1xD
+
+After class Desafio Manejo de archivos
+https://coderhouse.zoom.us/rec/share/JvSpd6hJ_g-89XEwHTDcitWBSyAJFXIz0hgYm857DwgCoJMZ6E9zeMfix8a0Wi6Z.33eMNetvYZYm_U_W
+
+5. Administradores de Paquetes - NPM
+https://coderhouse.zoom.us/rec/share/9xeiKZ27_R_pQVlyoaMw_C3vKePhWqOKfnfnUksyHExcaaALZo970EFSBMqdvgjH.ZyWQstUP8wgAL7tW
+
+6. Servidores Web
+https://coderhouse.zoom.us/rec/share/Vnc3gC8pWQq6myXLYq2uyXAHcTrgCj_uHmzGR61Wh7-ZU2kUYZ4vO3kmKKBFau2j.lv4eS1KUL6xfwuyH
+
+After class Revision de Desafio  Servidor Express
+https://coderhouse.zoom.us/rec/share/oP4fcMsKgGlEtdBGpeMmRFV_FO4m0nezI2sSb7_q-U_DSXT2KclduMsCjD2nWVr3.2QLtJ3Wi1OG1wusz
