@@ -18,8 +18,8 @@ router
 
     .post('/', (req, res) => {
         const obj = req.body;
-        const newObj = container.save(obj)
-        res.send(newObj)
+        const newObj = container.save(obj);
+        res.redirect('/')
     })
     .put('/:id', (req, res) => {
         const id = req.params.id;

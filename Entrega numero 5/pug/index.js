@@ -8,14 +8,22 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "pug");
 app.set("views", "./views");
 
+let productos = [];
+
 app.get("/", (req, res) => {
-  res.render("index", { title: "PUGJS", mensaje: "Pug JS Works!!!" });
+  res.render('pages/formulario', {productos, title: "productos"});
 });
 
-app.get("/datos", (req, res) => {
-  const { min, max, titulo, nivel } = req.query;
-  res.render("meter", { min, max, titulo, nivel });
-});
+app.post("/productos", (req, res)=>{
+
+  productos.push(req.body);
+
+  res.redirect('/');
+})
+
+app.get('/productos', (req, res)=>{
+  res.render('pages/tablaHtml', {productos, title: "productos"})
+})
 
 const PORT = 3000;
 

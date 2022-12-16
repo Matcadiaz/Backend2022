@@ -1,0 +1,25 @@
+include ../partials/encabezado
+
+body 
+    div(class='container mt-3')
+        div(class='jumbotron')
+            h1(style='color: blue') Ingrese datos 
+            br
+            form(action="/productos" method="post")
+                div(class="form-group") 
+                    label(for="producto") Producto 
+                    input#nombre(class="form-control" type="text" name="producto") 
+                
+                div(class="form-group") 
+                    label(for="precio") Precio 
+                    input#precio(class="form-control" type="text" name="precio")
+                
+                div(class="form-group")
+                    label(for="URL") URL
+                    input#URL(class="form-control" type="text" name="URL")
+
+                button(class="btn btn-success mt-3 mb-5" style="margin-right: 10px") Enviar
+                
+                button(class="btn btn-success mt-3 mb-5")
+                    a(href="/productos") Ir a productos
+                    
