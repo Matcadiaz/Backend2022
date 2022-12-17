@@ -25,7 +25,7 @@ app.get('/productos', (req, res)=>{
   res.render('pages/tablaHtml', {productos, title: "productos"})
 })
 
-const PORT = 3000;
+const PORT = 8080;
 
 const server = app.listen(PORT, () => {
   console.log(`Listening on port ${server.address().port}`);
