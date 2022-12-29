@@ -34,11 +34,27 @@
         <div class="container mt-3">
             <div class="jumbotron">
                 <h1>HISTORIAL</h1>
-                    <div class="table-responsive" id="wrap">
-                      
-                    </div>                  
+                    <div class="table-responsive" id="wrap"></div>                  
+            </div>
+        </div>
+
+
+        <div class="container mt-3">
+            <div>
+                <h1 style="color: brown;">
+                    CENTRO DE MENSAJES
+                </h1>
             </div>
 
+            <div id="messages"></div>
+
+            <form onsubmit="return addMessage(this)">
+                <input type="email" id="username" placeholder="Tu Nombre" >
+                <input type="text" id="texto" placeholder="Cuéntanos algo...">
+                <input type="submit" value="Enviar">
+            </form>
+
         </div>
+
     </div>
 </body>
