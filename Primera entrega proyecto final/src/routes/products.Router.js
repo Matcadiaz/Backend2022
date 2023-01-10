@@ -14,7 +14,7 @@ function crearErrorNoEsAdmin(ruta, metodo) {
     return error
 }
 
-const administrador = false
+const administrador = true
 
 function soloAdmins(req, res, next) {
     if (!administrador) {

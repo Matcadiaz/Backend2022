@@ -52,9 +52,12 @@ formAgregarProducto.addEventListener('submit', e => {
 
 function leerProductoDelFormulario() {
     const producto = {
-        title: formAgregarProducto[0].value,
-        price: formAgregarProducto[1].value,
-        thumbnail: formAgregarProducto[2].value
+        producto: formAgregarProducto[0].value,
+        descripcion: formAgregarProducto[1].value,
+        codigo:formAgregarProducto[2].value,
+        precio: formAgregarProducto[3].value,
+        stock: formAgregarProducto[4].value,
+        thumbnail: formAgregarProducto[5].value
     }
     return producto
 }
@@ -79,10 +82,13 @@ function actualizarProducto(idProd) {
 }
 
 
-function llenarFormulario(title = '', price = '', thumbnail = '') {
-    formAgregarProducto[0].value = title
-    formAgregarProducto[1].value = price
-    formAgregarProducto[2].value = thumbnail
+function llenarFormulario(producto = '', descripcion = '', codigo = '', precio = '', stock = '', thumbnail = '') {
+    formAgregarProducto[0].value = producto
+    formAgregarProducto[1].value = descripcion
+    formAgregarProducto[2].value = codigo
+    formAgregarProducto[3].value = precio
+    formAgregarProducto[4].value = stock
+    formAgregarProducto[5].value = thumbnail
 }
 
 function makeHtmlTable(productos) {
@@ -100,18 +106,24 @@ function makeHtmlTable(productos) {
         <div class="table-responsive">
             <table class="table table-dark">
                 <tr>
-                    <th>Nombre</th>
+                    <th>Producto</th>
+                    <th>Descripcion</th>
+                    <th>Codigo</th>}
                     <th>Precio</th>
+                    <th>Stock (un)</th>
                     <th>Foto</th>
                 </tr>`
         for (const prod of productos) {
             html += `
                     <tr>
-                    <td><a type="button" onclick="llenarFormulario('${prod.title}', '${prod.price}','${prod.thumbnail}')" title="copiar a formulario...">${prod.title}</a></td>
-                    <td>$${prod.price}</td>
-                    <td><img width="50" src=${prod.thumbnail} alt="not found"></td>
-                    <td><a type="button" onclick="borrarProducto('${prod.id}')">borrar</a></td>
-                    <td><a type="button" onclick="actualizarProducto('${prod.id}')">actualizar</a></td>
+                        <td><a type="button" onclick="llenarFormulario('${prod.producto}','${prod.descripcion}','${prod.codigo}','${prod.precio}','${prod.stock}','${prod.thumbnail}')" title="copiar a formulario...">${prod.producto}</a></td>
+                        <td>${prod.descripcion}</td>
+                        <td>${prod.codigo}</td>
+                        <td>$${prod.precio}</td>
+                        <td>${prod.stock}</td>
+                        <td><img width="50" src=${prod.thumbnail} alt="not found"></td>
+                        <td><a type="button" onclick="borrarProducto('${prod.id}')">borrar</a></td>
+                        <td><a type="button" onclick="actualizarProducto('${prod.id}')">actualizar</a></td>
                     </tr>`
         }
         html += `
